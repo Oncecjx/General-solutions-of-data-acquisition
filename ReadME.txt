@@ -1,13 +1,13 @@
-General Industrial Frame Suite (GIFS)
-一套完整的工业自动化监控、数据采集与 MES 集成解决方案
+#General Industrial Frame Suite (GIFS)
+#一套完整的工业自动化监控、数据采集与 MES 集成解决方案
 
-📌 项目概述
+##📌 项目概述
 本项目是一个分层式的工业软件架构，涵盖了从现场端数据采集（SCADA）、生产数据看板（Dashboard）到生产执行系统接口（MES API）的全流程实现。旨在提供一个高性能、易扩展的通用工业框架。
 
-🏗 系统架构
+##🏗 系统架构
 项目由以下四个核心子系统组成：
 
-1. SCADA 控制系统 (GeneralFrameSystem)
+###1. SCADA 控制系统 (GeneralFrameSystem)
 底层数据采集与生产控制核心
     开发环境: WinForms (.NET) + MySQL
     核心功能:
@@ -17,19 +17,19 @@ General Industrial Frame Suite (GIFS)
         生产追溯: 详细的生产日志，记录 MES 交互、生产步骤及看板同步状态。
         配方系统: 支持多型号生产配方切换及打印参数管理。
 
-2. 电子看板服务器 (GeneralFrameBoard)
+###2. 电子看板服务器 (GeneralFrameBoard)
 数据中转与持久化引擎
     开发环境: WinForms + MySQL
     主要功能: 作为数据网关，实时接收底层设备数据并进行清洗、存储，为前端大屏提供稳定的数据源。
 
-3. 数据可视化大屏 (GeneralBoardServer)
+###3. 数据可视化大屏 (GeneralBoardServer)
     多端数据展现平台
     技术选型:
         C/S 端: 基于 WPF 实现的高性能桌面看板。(最终选择√)
         B/S 端: 基于 ASP.NET Core + jQuery 的响应式 Web 页面。
     主要功能: 实时生产指标可视化、效率统计、产线状态监控。
 
-4. MES 集成接口 (GeneralFrameMES)
+###4. MES 集成接口 (GeneralFrameMES)
 标准化业务逻辑层
     技术选型: ASP.NET Core WebAPI + MySQL
     核心 API:

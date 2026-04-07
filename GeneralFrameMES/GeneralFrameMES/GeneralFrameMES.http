@@ -1,0 +1,6 @@
+@GeneralFrameMES_HostAddress = http://localhost:5187
+
+GET {{GeneralFrameMES_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

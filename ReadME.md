@@ -1,4 +1,4 @@
-# General Industrial Frame Suite (GIFS)
+# General-solutions-of-data-acquisition
 
 > 一套完整的工业自动化监控、数据采集与 MES 集成解决方案
 
@@ -44,7 +44,7 @@
 ### 3️⃣ 数据可视化大屏 (GeneralBoardServer)
 
 **技术选型：**
-- C/S：WPF  
+- C/S：WPF  （√）
 - B/S：ASP.NET Core + jQuery  
 
 **主要功能：**
